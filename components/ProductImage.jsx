@@ -4,13 +4,15 @@ import ProductNote from './ProductNote'
 import MobileCarousel from './MobileCarousel'
 
 const ProductImage = ({ detail }) => {
-    const [width, setWidth] = useState();
+    const [width, setWidth] = useState(0);
     const breakpoint = 800;
     useEffect(() => {
         setWidth(window.innerWidth)
-        window.addEventListener("resize", () => setWidth(window.innerWidth), false);
     })
 
+    useEffect(() => {
+        window.addEventListener("resize", () => setWidth(window.innerWidth), false);
+    })
     return width < breakpoint ? (<div><MobileCarousel detail={detail} /></div>) : (
         <div className='hidden p-3 w-[50%] md:flex flex-col flex-1 left-[300px] relative items-center'>
             <div className='h-96 w-96 relative min-w-[300px]'>
