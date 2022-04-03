@@ -4,7 +4,7 @@ import ProductNote from './ProductNote'
 import MobileCarousel from './MobileCarousel'
 
 const ProductImage = ({ detail }) => {
-    const [width, setWidth] = useState(0);
+    const [width, setWidth] = useState();
     const breakpoint = 800;
     useEffect(() => {
         setWidth(window.innerWidth)
