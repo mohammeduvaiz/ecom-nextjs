@@ -13,6 +13,10 @@ export default function Home({ response }) {
   }
   return (
     <>
+      <Head>
+        <title>ECOM</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header cartValue={cartCount} />
       <ProductDetails products={response} addToCart={addToCart} />
     </>
