@@ -29,10 +29,10 @@ const ProductCardComp = ({ detail, addToCart }) => {
                 </div>
                 <div className='flex p-1 gap-3 '>
                     <div className="relative h-20 w-16">
-                        <Image src={detail.urls.thumb} layout="fill" objectFit='contain' className='border-2 border-black' />
+                        <Image src={detail.urls.thumb} layout="fill" objectFit='contain' className='border-2 border-black' alt='thumbnail model' />
                     </div>
                     <div className="relative h-20 w-16">
-                        <Image src={detail.urls.thumb} layout="fill" objectFit='contain' />
+                        <Image src={detail.urls.thumb} layout="fill" objectFit='contain' alt='thumbnail model' />
                     </div>
                 </div>
             </div>

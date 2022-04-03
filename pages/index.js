@@ -16,6 +16,7 @@ export default function Home({ response }) {
       <Head>
         <title>ECOM</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Ecommerce website for mcfadyen" />
       </Head>
       <Header cartValue={cartCount} />
       <ProductDetails products={response} addToCart={addToCart} />
